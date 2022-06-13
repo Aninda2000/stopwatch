@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#stopwatch{
+    height: auto;
+    width: 100vw;
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*  rotate animation */
+@keyframes roatate {
+    0%{
+        transform: rotate3d(0deg);
+    }
+    100%{
+        transform: rotate3d(90deg);
+    }
+}
+.timer{
+    height:30px;
+    animation: rotate 4s linear infinite;
+}
+
+#heading{
+    margin: 0px 20px;
+    display: inline-block;
+    color: coral;
+}
+.container{
+    height: 80vh;
+    width:70vw;
+    /* background-color: rgb(105, 172, 133); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.watch{
+    margin: 40px;
+    position: relative;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background-color: #6d6dc9;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-size: 42px;
+    color: white;
+    border: 4px solid rgb(6, 6, 95);
+    
+}
+.display{
+    margin-left: 60px;
+    width: 100px;
+    background-color: green;
+    padding: 4px;
+    border-radius: 20px;
+    border: 2px solid rgb(6, 6, 60);
+    box-sizing: border-box;
+}
+.minutes{
+    color: white;
+    background-color: rgb(192, 67, 144);
+    display: block;
+    width: 50px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.seconds{
+    color: white;
+    background-color: rgb(192, 67, 144);
+    display: block;
+    width: 50px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.mili-seconds{
+    color: white;
+    background-color: rgb(192, 67, 144);
+    display: block;
+    width: 50px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+#start{
+    margin-left: 30px;
+    height:30px;
+    width:80px;
+    font-size: 20px;
+    border-radius:20px;
+    background-color: rgb(202, 16, 16);
+    color: white;
+    border: 2px solid rgb(128, 34, 34);
+}
+#start:hover{
+    color:rgb(7, 7, 71);
+    background-color: rgb(248, 128, 128);
+}
+#stop{
+    margin-left: 30px;
+    height:30px;
+    width:80px;
+    font-size: 20px;
+    border-radius:20px;
+    background-color: rgb(202, 16, 16);
+    color: white;
+    border: 2px solid rgb(128, 34, 34);
+}
+#stop:hover{
+    color:rgb(7, 7, 71);
+    background-color: rgb(248, 128, 128);
+}
+#reset{
+    margin-left: 30px;
+    height:30px;
+    width:80px;
+    font-size: 20px;
+    border-radius:20px;
+    background-color: rgb(202, 16, 16);
+    color: white;
+    border: 2px solid rgb(128, 34, 34);
+}
+#reset:hover{
+    color:rgb(7, 7, 71);
+    background-color: rgb(248, 128, 128);
+}
+
