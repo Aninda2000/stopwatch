@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopWatch</title>
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="images/stopwatch.jpg">
+    <!-- external css file link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div id="stopwatch">
+        <!-- heading stopwatch -->
         <div class="heading-container">
+            <!-- image in heading -->
             <img src="images/timer.png" alt="timer" class="timer">
             <h1 id="heading"> StopWatch</h1>
             <img src="images/timer.png" alt="timer" class="timer">
         </div>
         <div class="container">
             <div class="watch">
+                <!-- watch interface -->
                 <div class="display">
-                    <!-- <span>:</span> -->
+                    
                     <span id="minutes">00</span>
                     <span>:</span>
                     <span id="seconds">00</span>
@@ -27,6 +33,7 @@
                     <span>&nbsp</span>
                 </div>
             </div>
+            <!-- button to controll the watch  -->
             <div class="btn">
                 <button type ="button" id="start">Start</button>
                 <button type="button" id="stop">Stop</button>
@@ -35,5 +42,6 @@
         </div>
     </div>
 </body>
+<!-- external javascript file -->
 <script src="script.js"></script>
 </html>

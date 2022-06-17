@@ -6,6 +6,8 @@ const sec=document.getElementById('seconds');
 const min=document.getElementById('minutes');
 const timerImage=document.getElementsByClassName('timer');
 const music=new Audio('music/stopWatchmusic.mp3');
+const headingimage=document.getElementsByClassName('timer');
+
 let interval;
 
 // handeling button click events
@@ -15,14 +17,30 @@ start.addEventListener('click',function(e){
     start.disabled=true;    
     start.style.backgroundColor="pink";    
     console.log('start button clicked');
+
+    //start timer
     interval= setInterval(timer,10);
+
+    //animation start
+    for(i of headingimage){
+        i.style.animation="rotating ease-in-out 0.5s infinite";
+    }
+    // animation=setInterval(rotate,500);
 });
+
 //stop button click event
 stop.addEventListener('click',function(e){
     start.style.backgroundColor="rgb(202, 16, 16)";
     start.disabled=false;
     console.log('stop button clicked');
     music.pause();
+
+    //animation stop
+    for(i of headingimage){
+        i.style.animation="none";
+    }
+
+    //stop timer
     clearInterval(interval);
 });
 //reset button click events
@@ -30,6 +48,8 @@ reset.addEventListener('click',function(e){
     start.style.backgroundColor="rgb(202, 16, 16)";
     start.disabled=false;
     console.log('reset button clicked');
+
+    //all minite,second,milisec will reset to 00
     minite=0;
     second=0;
     miliSecond=0;
@@ -37,8 +57,16 @@ reset.addEventListener('click',function(e){
     miliSec.innerHTML="00";
     min.innerHTML="00";
     music.pause();
+
+    //stop timer
     clearInterval(interval);
+
+    //animation stop
+    for(i of headingimage){
+        i.style.animation="none";
+    }
 });
+
 
 //timer function
 let miliSecond=0;

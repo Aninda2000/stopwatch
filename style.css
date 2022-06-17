@@ -12,17 +12,17 @@ body{
     justify-content: center;
 }
 /*  rotate animation */
-@keyframes roatate {
-    0%{
-        transform: rotate3d(0deg);
+@keyframes rotating {
+    0% {
+        transform: rotateX(0deg);
     }
-    100%{
-        transform: rotate3d(90deg);
+    100% {
+        transform: rotateX(360deg);
     }
 }
-.timer{
+.heading-container img{
     height:30px;
-    animation: rotate 4s linear infinite;
+
 }
 
 #heading{
